@@ -3,10 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
     <title>Merge columns in a table</title>
 </head>
 <body>
-<!-- git  -->
+<section>
+<table class="table">
+    <caption>Merge columns</caption>
+    <thead>
+    <tr>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+    <th>6</th>
+    <th>7</th>
+    <th>8</th>
+    <th>9</th>
+    <th>10</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td colspan="2">2-3</td>
+        <td>4</td>
+        <td colspan="3">5-7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td colspan="5">1-5</td>
+        <td colspan="5">6-10</td>
+    </tr>
+    <tr>
+        <td colspan="10">1-10</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td colspan="2">2-3</td>
+        <td colspan="3">4-6</td>
+        <td colspan="10">7-10</td>
+    </tr>
+    </tbody>
+</table>
+</section>
 </body>
 </html>
